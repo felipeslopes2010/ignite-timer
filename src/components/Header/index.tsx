@@ -3,7 +3,7 @@ import { Timer, Scroll  } from "phosphor-react"
 
 import logoIgnite from "../../assets/logo-ignite.svg"
 
-import { HeaderContainer } from "./style"
+import { HeaderContainer } from "./styles"
 
 export function Header() {
     return (
