@@ -1,13 +1,12 @@
+import { useContext } from "react";
+import { CyclesContext } from "../..";
+import { useFormContext } from "react-hook-form";
+
 import { FormContainer, TaskInput, MinutesAmountInput } from "./styles"
 
 export function NewCycleForm() {
-    const { register, handleSubmit, watch, reset } = useForm<NewCycleFormData>({
-        resolver: zodResolver(newCycleFormValidationSchema),
-        defaultValues: {
-            task: "",
-            minutesAmount: 5,
-        }
-    });
+    const { activeCycle } = useContext(CyclesContext);
+    const { register } = useFormContext();
     
     return (
         <FormContainer>
