@@ -42,7 +42,6 @@ export function CyclesContentProvider({ children }: CyclesContextProviderProps) 
 
     function markCurrentCycleAsFinished() {
         dispatch(markCurrentCycleAsFinishedAction());
-
     }
 
     function createNewCycle(data: CreateCycleData) {
